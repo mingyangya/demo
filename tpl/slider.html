@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <style>
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,li {
+    list-style: none;
+}
+
+.content {
+    position: relative;
+    top:50px;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.box {
+    position: relative;
+    display: table;
+    width: 600px;
+    height: 204px;
+    overflow: hidden;
+}
+
+.nav-ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4200px;
+}
+
+.nav-ul>li {
+    width: 600px;
+    display: inline-block;
+    float:left;
+}
+
+.nav-ul>li>img {
+    display: block;
+    width: 100%;
+}
+
+.content>span {
+    display: none;
+    position: absolute;
+    top: 50%;
+    width: 40px;
+    height: 80px;
+    line-height: 80px;
+    margin-top: -40px;
+    color: #fff;
+    font-size: 26px;
+    cursor: pointer;
+    background: rgba(0,0,0,.6);
+    text-align: center;
+}
+
+.content .left {
+    left: 0;
+}
+
+.content .right {
+    right: 0;
+}
+
+.num {
+    display: table;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 150px;
+    text-align: center;
+    margin-left: -75px;
+}
+
+.num>li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.active {
+    background: #FF6409 !important;
+}
+    </style>
+</head>
+
+<body>
+    <div class="content">
+        <div class="box" id='box'>
+            <ul class="nav-ul">
+                <li>
+                    <img src="./../images/20170829/a1.jpg">
+                </li>
+                <li>
+                    <img src="./../images/20170829/a2.jpg">
+                </li>
+                <li>
+                    <img src="./../images/20170829/a3.jpg">
+                </li>
+                <li>
+                    <img src="./../images/20170829/a4.jpg">
+                </li>
+                <li>
+                    <img src="./../images/20170829/a5.jpg">
+                </li>
+                <li>
+                    <img src="./../images/20170829/a6.jpg">
+                </li>
+            </ul>
+        </div> <span class="left move"><</span>
+        <span class="right move">></span>
+        <ul class="num"></ul>
+    </div>
+</body>
+<script>
+    window.onload = function(e) {
+        var i = 0,
+            t = 1000,
+            timer = null,
+            ul = $('.nav-ul'),
+            left = document.getElementsByClassName('left')[0],
+            right = document.getElementsByClassName('right')[0],
+            copy = ul.find('li').eq(0),
+            num = $('.num');
+        ul.append(copy.clone());
+        var len = ul.find('li').length,
+            width = copy.css('width');
+        //滑动的宽度 
+        width = parseInt(width.split('px')[0], 10);
+        //向右滑动    
+        right.onclick = function(e) {
+            i++;
+            if (i == len) {
+                i = 1;
+                ul.css({
+                    'left': 0
+                });
+            }
+            ul.stop().animate({
+                'left': -width * i
+            }, 500);
+            //点滑动
+            if (i == len - 1) {
+                num.find('li').eq(0).addClass('active').siblings().removeClass('active')
+            } else {
+                num.find('li').eq(i).addClass('active').siblings().removeClass('active')
+            }
+        }
+        //向左滑动   
+        left.onclick = function(e) {
+            i--;
+            if (i == -1) {
+                i = len-2;
+                ul.css({
+                    'left': -width * (len-1)
+                });
+            }
+            ul.stop().animate({
+                'left': -width * i
+            }, 500);
+            num.find('li').eq(i).addClass('active').siblings().removeClass('active')
+        }
+        //移动显示左右切换图标
+        $('.content').hover(function() {
+            $('.move').show();
+            clearInterval(timer)
+        }, function() {
+            $('.move').hide()
+            timer = setInterval(scroll, t);
+        })
+        //生成num小点
+        for (let j = 0; j < len - 1; j++) {
+            num.append('<li></li>')
+        }
+        num.find('li').eq(0).addClass('active');
+        var numLi = num.find('li');
+        num.find('li').mouseover(function() {
+            var index = $(this).index();
+            ul.stop().animate({
+                'left': -width * index
+            }, 150);
+            $(this).addClass('active').siblings().removeClass('active');
+        })
+        //设置自动变换
+        scroll();
+        //定义计时器
+        timer = setInterval(scroll, t)
+        //设置滚动事件
+        function scroll() {
+            i++;
+            if (i == len) {
+                i = 1;
+                ul.css({
+                    'left': 0
+                });
+            }
+            ul.stop().animate({
+                'left': -width * i
+            }, 500);
+            //点滑动
+            if (i == len - 1) {
+                num.find('li').eq(0).addClass('active').siblings().removeClass('active')
+            } else {
+                num.find('li').eq(i).addClass('active').siblings().removeClass('active')
+            }
+        }
+    }
+</script>
+</html>
