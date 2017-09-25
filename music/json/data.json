@@ -1,0 +1,11 @@
+{
+	"music":[{
+		"musicId": "Taste the Feeling",
+		"singer": "Avicii",
+		"musicAdd": "../data/2.wav"
+		}, {
+		"musicId": "Taste2",
+		"singer": "Avicii2",
+		"musicAdd": "../data/T.ogg"
+		}]
+}

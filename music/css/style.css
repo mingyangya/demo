@@ -1,0 +1,132 @@
+body {
+    font-size: 20px;
+    font-weight: bolder;
+    height: 1000px;
+    padding: 20px;
+}
+
+.audio {
+    display: none;
+}
+
+.audio-player {
+    width: 300px;
+    display: flex;
+    border: 1px solid #F1EFEF;
+}
+
+.item:first-child {
+    width: 60px;
+    vertical-align: middle;
+    background: #000;
+    position: relative;
+}
+
+.item:first-child>img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    vertical-align: middle;
+    opacity: .7;
+}
+
+.play-start {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 32px;
+    height: 32px;
+    margin: -16px 0 0 -16px;
+    background: url(../images/audio_sprite.png);
+    background-position: -68px -118px;
+    cursor: pointer;
+}
+
+.play-start:hover {
+    background-position: -68px -167px;
+}
+
+.play-loading {
+    display: none;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 35px;
+    top: 37px;
+    background: url(../images/audio_sprite.png);
+    background-position: 0px 142px;
+    cursor: pointer;
+}
+
+.play-loading:hover {
+    background-position: 0px 45px;
+}
+
+.item:nth-child(2) {
+    width: 240px;
+}
+
+.song-name {
+    height: 35px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.song-name>span {
+    display: inline-block;
+}
+
+.song-icon {
+    width: 17px;
+    height: 18px;
+    background: url(../images/audio_sprite.png);
+    background-position: 0px -132px;
+    background-repeat: no-repeat;
+}
+
+.song-title {
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.song-load {
+    height: 20px;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.song-line {
+    width: 80%;
+    height: 2px;
+    background: #cdcdcd;
+}
+
+.song-run-line {
+    float: left;
+ /* width:50%;*/
+    height: 2px;
+    background: #f00;
+}
+
+.song-run-point {
+    display: block;
+    float: left;
+    width: 8px;
+    height: 8px;
+    margin: -3px 0;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+
+.song-time {
+    display: inline-block;
+    font-weight: normal;
+    font-size: 12px;
+    margin: 0 0 -5px 8px;
+}
