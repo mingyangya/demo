@@ -3,7 +3,7 @@
 截图：
 
 - 开始播放
-	![https://haochn.github.io/demo/music/images/playStart.jpg]()
+	![playStart.jpg](https://haochn.github.io/demo/music/images/playStart.jpg)
 
 - 播放中
-	![https://haochn.github.io/demo/music/images/play.jpg]()
+	![play.jpg](https://haochn.github.io/demo/music/images/play.jpg)
