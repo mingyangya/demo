@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>百度一下，你就知道</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<div class="main">
+		<header>
+			<nav class="nav">
+				<li><a href="">糯米</a></li>
+				<li><a href="">新闻</a></li>
+				<li><a href="">地图</a></li>
+				<li><a href="">hao123</a></li>
+				<li><a href="">视频</a></li>
+				<li><a href="">贴吧</a></li>
+				<li><a  class="load" id="load">登陆</a></li>
+				<li id="setting_bt" class="setting_bt"> <a href="">设置</a>
+					<!-- 设置隐藏部分 -->
+					<div class="setting" id="setting_part">
+							<ul>
+								<li>搜索设置</li>
+								<li>高级搜索</li>
+								<li>关闭预测</li>
+								<li>搜索历史</li>
+							</ul>
+					</div>
+				</li>
+				<li  id="more_bt"><a href="" class="nav_more">更多产品</a>
+					<!-- 更多产品隐藏部分 -->
+					<div class="more" id="more">
+						<ul>
+							<li>更多产品</li>
+							<li><span class="music"></span><a href="">音乐</a></li>
+							<li><span class="pic"></span><a href="">图片</a></li>
+							<li><span class="know"></span><a href="">知道</a></li>
+							<li><span class="ibook"></span><a href="">文库</a></li>
+							<li><span class="cloud"></span><a href="">风云榜</a></li>
+							<li><a href="">全部产品>></a></li>
+						</ul>
+					</div>
+				</li>		
+			</nav>
+		</header>
+		<section class="part1">
+			<img src="img/bd_logo.png" alt="">
+		</section>
+		<section class="part2">
+			<div class="info">
+			<input type="text" class="search">
+			<span class="pho"></span>	
+			<input type="button" class="submit" value="百度一下"></input>
+			</div>
+			</section>
+		<section class="white_block"></section>
+		<section class="part3">
+			<div class="qrCode"><img src="img/qrCode.png" alt=""></div>
+			<div class="iphone_show">手机百度</div>
+		</section>
+		<footer>
+			<p>
+				<a href="">把百度设为主页</a>
+				<a href="">关于百度</a>
+				<a href="">About  Baidu</a>
+				<a href="">百度推广</a>
+			</p>
+			<p>
+				©2017 Baidu 
+				<a href="">使用百度前必读</a> 
+				<a href="">意见反馈</a> 
+				京ICP证030173号
+				<span class="icon_first"></span>  
+				<a href="" class="add_number">京公网安备11000002000001号</a>
+				<span class="icon_last"></span>
+			</p>
+		</footer>
+			<div class="window_part2" id="window_part2">
+   		<div class="window">
+   			<div class="window_top">
+				<span class="window_logo">登录百度账号</span>
+				<div class="window_load_button"><a href="">X</a></div>
+   			</div>
+   			<div class="window_form">
+   				<div class="window_form_body">
+   					<div class="window_form_tips"></div>
+   					<div class="window_iphone_icon"><a href="">短信快捷登录</a></div>
+   					<input type="text" class="number">
+   					<input type="text" class="password">
+   					<div class="window_infos">
+   						<input type="text" class="window_validate">
+   						<span class="window_validate_pic"><img src="img/validate.png" alt="" class="window_validate_img"></span>
+   						<span class="window_change_pic"><a href="">换一张</a></span>
+   					</div>
+   					<div class="window_info_item">
+   						<span class="window_status"><input type="checkbox" class="window_status_bt">下次自动登录</span>
+   						<span class="window_load_question"><a href="">登录遇到问题</a></span>
+   						</div>
+   					<button class="window_load" id="window_load">提交</button>
+   					<span class="window_register"><a href="">立即注册</a></span>
+   				</div>
+   			</div>
+   			<div class="window_bottom">
+   				<div class="window_load_method">可以使用以下方式登录</div>
+   				<div class="window_load_item"><a href=""><img src="img/qq.png" alt=""></a><a href=""><img src="img/weibo.png" alt=""></a>
+   				<div class="window_qeCode"></div>
+   				</div>
+   				
+   			</div>
+   		</div>
+   	</div>
+	</div>
+   	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script>
+		$(function(){
+			var Dom={
+				settint_bt:$('#setting_bt'),
+				setting_part:$('#setting_part'),
+				more:$('#more'),
+				more_bt:$('#more_bt'),
+			}
+
+			$('#load').click(function(){
+				$('#window_part2').show();
+				console.log(11)
+			});
+			$("#window_load").click(function(){
+				$('#window_part2').hide();
+				console.log(22)
+			});
+			// 设置按钮	
+			
+			Dom.settint_bt.hover(function(){
+				Dom.setting_part.show();
+			},function(){
+				Dom.setting_part.hide();
+			});
+			
+			// // 更多产品按钮
+			Dom.more_bt.hover(function(){
+				Dom.more.show();
+			},function(){
+				Dom.more.hide();
+			});
+
+			
+		});
+	</script>
+
+</html>

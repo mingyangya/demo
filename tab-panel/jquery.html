@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery实现选项卡功能</title>
+	<style>
+		.tab{
+			margin:0 auto;
+			width:60%;
+			height:300px;
+			padding:0 0;
+			border:1px solid #ccc;
+
+		}
+		#nav{
+			
+			height:30px;
+			padding:0;
+			margin:0;
+			font-size: 0;
+			cursor: pointer;
+		}
+		#nav li{
+			padding:0;
+			margin:0;
+			display: inline-block;
+			width:25%;
+			line-height: 30px;
+			text-align:center;
+			list-style: none;
+			
+			background: #f3f3f3;
+			font-size: 14px;
+		}
+		#nav .selected{
+			
+			background: #099;
+			
+		}
+
+		#nav li:hover{
+		
+			background: #099;
+		}
+		#contains {
+			text-align: center;
+			padding:20px 0;
+		}
+		.hide{
+			display:none;
+		
+		}
+	</style>
+	<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+	
+		$(document).ready(function(){
+
+			$('#nav li').each(function(){
+				
+				$($(this).click(function(){
+					
+					if(!$(this).hasClass('selected')){
+						$(this).addClass('selected').siblings().removeClass();
+					}
+					else{
+						$(this).siblings().removeClass();
+					}
+					
+					var id=$(this).index();
+					$('#contains').children().eq(id).show().siblings().hide();
+				})
+
+
+
+				)
+					
+			});
+		})
+
+		
+	</script>
+</head>
+<body>
+<div class="tab">
+<div class="title">
+	<ul id="nav">
+		<li class="selected">1</li>
+		<li>2</li>
+		<li>3</li>
+		<li>4</li>
+	</ul>
+</div>
+<div id="contains">
+<div>111</div>
+<div class="hide">222</div>
+<div class="hide">333</div>
+<div class="hide">444</div>
+</div>
+
+</div>
+
+	
+</body>
+</html>

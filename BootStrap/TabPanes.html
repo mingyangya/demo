@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BootStrap 轻松实现选项卡</title>
+<style>
+.body {
+    display: block;  
+    margin-left: auto;  
+    margin-right: auto; 
+    float: none; 
+    width:800px;
+}
+.content {
+ padding-top:50px;
+  height:200px;
+  border:1px solid #ddd;
+  border-top:0;
+}
+</style>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="http://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="js/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+
+<div class="body">
+ <h1 class="text-center">BootStrap 轻松实现选项卡</h1>
+    <!-- 导航标签 -->
+<ul class="nav nav-tabs" role="tablist">
+    <!-- 默认标签 -->
+  <li role="presentation" class="active"><a href="#home" role="tab" data-toggle="tab">春风</a></li>
+  <li role="presentation"><a href="#profile" role="tab" data-toggle="tab">烈阳</a></li>
+  <li role="presentation"><a href="#messages" role="tab" data-toggle="tab">晚秋</a></li>
+  <li role="presentation"><a href="#settings" role="tab" data-toggle="tab">冬雪</a></li>
+</ul>
+
+   <!-- 选项卡内容 -->
+<div class="tab-content">
+   <!-- 默认显示内容 -->
+  <div role="tabpanel" class="tab-pane active" id="home">
+     <p class="text-center content">春风如醇酒，著物物不知。</p>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="profile">
+     <p class="text-center content">烈日炎炎似火烧，野田禾稻半枯焦。</p>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="messages">
+     <p class="text-center content">空山新雨后，天气晚来秋。</p>
+  </div>
+  <div role="tabpanel" class="tab-pane" id="settings">
+     <p class="text-center content">忽如一夜春风来，千树万树梨花开。</p>
+  </div>
+</div>
+
+</div>
+
+  </body>
+</html>
