@@ -101,6 +101,6 @@ function changeNum(num){
 *
 */
 function setMussic(){
-  $('.audio-player').append('<audio src="./data/3.wav" controls="false" class="audio" preload="preload"></audio>')
+  $('.audio-player').append('<audio src="./data/Taste.ogg" controls="false" class="audio" preload="preload"></audio>')
 }
 
