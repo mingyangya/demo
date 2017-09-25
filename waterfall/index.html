@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>瀑布效果</title>
+    <title></title>
+   <link rel="stylesheet" href="https://haochn.github.io/initResources/init.css">
+    <style type="text/css">
+       body{
+        text-align:center;
+        font-size:20px;      
+        color:#f8f;      
+        font-weight: bolder;
+        margin:0;
+        overflow-y:hidden;     
+       }
+       .main{
+        height:800px;
+       }
+       .wrap{
+        position: relative;
+        margin:0 auto;
+        padding:0 30px 0 50px;
+        height:800px;
+        
+       }
+       .box{
+        width:200px;
+        height:auto;
+        padding:5px;
+        margin:8px;
+        float:left;
+        border:2px solid #ccc; 
+        box-shadow: 2px 2px #ccc;
+        position:absolute;
+        left:0;
+        top:0;
+        -webkit-transition: all .7s ease-out .1s;
+        -moz-transition: all .7s ease-out;
+        -o-transition: all .7s ease-out .1s; 
+        transition: all .7s ease-out .1s 
+       }
+        .img{
+        width:100%;
+        position: relative;
+
+        }        
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="wrap">
+        <div class="box">
+            <span class="img"><img src="img/2.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/2.jpg" alt=""><div class="top_cen"></div></span>
+        </div> 
+        <div class="box">
+            <span class="img"><img src="img/07.jpg" alt=""><div class="top_cen"></div></span>
+        </div> 
+        <div class="box">
+            <span class="img"><img src="img/04.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/05.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/06.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/07.jpg" alt=""><div class="top_cen"></div></span>
+        </div> 
+        <div class="box">
+            <span class="img"><img src="img/08.jpg" alt=""><div class="top_cen"></div></span>
+        </div> 
+        <div class="box">
+            <span class="img"><img src="img/01.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/2.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/2.jpg" alt=""><div class="top_cen"></div></span>
+        </div> 
+        <div class="box">
+            <span class="img"><img src="img/07.jpg" alt=""><div class="top_cen"></div></span>
+        </div> 
+        <div class="box">
+            <span class="img"><img src="img/04.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/05.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/06.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/07.jpg" alt=""><div class="top_cen"></div></span>
+        </div> 
+        <div class="box">
+            <span class="img"><img src="img/08.jpg" alt=""><div class="top_cen"></div></span>
+        </div> 
+        <div class="box">
+            <span class="img"><img src="img/01.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/2.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/2.jpg" alt=""><div class="top_cen"></div></span>
+        </div> 
+        <div class="box">
+            <span class="img"><img src="img/07.jpg" alt=""><div class="top_cen"></div></span>
+        </div> 
+        <div class="box">
+            <span class="img"><img src="img/04.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/05.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/06.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+        <div class="box">
+            <span class="img"><img src="img/07.jpg" alt=""><div class="top_cen"></div></span>
+        </div> 
+        <div class="box">
+            <span class="img"><img src="img/08.jpg" alt=""><div class="top_cen"></div></span>
+        </div> 
+        <div class="box">
+            <span class="img"><img src="img/01.jpg" alt=""><div class="top_cen"></div></span>
+        </div>
+    </div>
+</div>
+</body>
+ <script type="text/javascript" src="https://haochn.github.io/initResources/jquery.min.js"> </script>
+<script type="text/javascript">
+$(function(){
+    setMainWidth($('.main'))
+    change();
+});
+$(window).resize(function(){
+ 
+  setMainWidth($('.main'))   
+  change();  
+})
+
+function minHeight(height,heights){
+    for(var index=0;index<heights.length;index++){
+      
+        if(heights[index]===height){
+          console.log('sss')
+            return index;            
+        }       
+    }
+}
+function realW(obj){
+    return obj.width()+2*(parseInt(obj.css('padding'))+parseInt(obj.css('margin')));
+}
+function realH(obj){
+    return obj.height()+2*(parseInt(obj.css('padding'))+parseInt(obj.css('margin')));
+}
+function change(){
+  //获取浏览器的宽度
+   var clientWidth=document.body.clientWidth;
+   var img=$('.box');
+   //获取屏幕的宽度
+   var imgWidth=realW($(img[0]));
+   var heights=[];  
+   //获取每行的盒子数
+   var colums=Math.floor(clientWidth/imgWidth);   
+    var left=(clientWidth-imgWidth*colums)/2;
+   //获取每个盒子的高度
+   img.each(function(i){
+    if(i<colums)
+        heights.push(realH($(img[i])));   
+   })  
+   var box=$('.box');
+   //获取盒子的个数
+   var boxLength=box.length;
+  
+    for(var i=0;i<boxLength;i++){
+        if(i<colums){
+          $(img[i]).css('top',0);
+          $(img[i]).css('left',i*imgWidth+left);
+        }
+        else{ 
+          //获取最小的盒子高度
+          height=Math.min.apply(null, heights);
+          //最小盒子的索引值
+          indexH=minHeight(height,heights);
+          heights[indexH]=heights[indexH]+ realH($(img[i]));
+         
+          $(img[i]).css('top',height);
+          $(img[i]).css('left',(indexH)*imgWidth+left);       
+        }
+    }
+}
+function setMainWidth(obj){
+   var width=document.body.clientWidth ;
+    obj.width(width);
+}
+</script>
+</html>
