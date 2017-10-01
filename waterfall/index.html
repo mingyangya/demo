@@ -1,19 +1,15 @@
 <!DOCTYPE html>
 <meta content="initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width" name="viewport" />
-<html lang="en">
+<html lang="zh-cn">
 <head>
   <meta charset="UTF-8" />
   <title>瀑布效果</title>
     <title></title>
-   <link rel="stylesheet" href="https://haochn.github.io/initResources/init.css">
+   <link rel="stylesheet" href="./css/init.css">
     <style type="text/css">
-       body{
-        text-align:center;
-        font-size:20px;      
-        color:#f8f;      
-        font-weight: bolder;
-        margin:0;
-        overflow-y:hidden;     
+       h1{
+       	text-align: center;
+       	font-size: 32px;
        }
        .main{
         height:800px;
@@ -49,6 +45,7 @@
     </style>
 </head>
 <body>
+<h1>瀑布流自适应</h1>
 <div class="main">
     <div class="wrap">
         <div class="box">
@@ -135,7 +132,7 @@
     </div>
 </div>
 </body>
- <script type="text/javascript" src="https://haochn.github.io/initResources/jquery.min.js"> </script>
+ <script type="text/javascript" src="./js/jquery.min.js"> </script>
 <script type="text/javascript">
 $(function(){
     setMainWidth($('.main'))
@@ -151,7 +148,7 @@ function minHeight(height,heights){
     for(var index=0;index<heights.length;index++){
       
         if(heights[index]===height){
-          console.log('sss')
+
             return index;            
         }       
     }
@@ -177,6 +174,7 @@ function change(){
     if(i<colums)
         heights.push(realH($(img[i])));   
    })  
+
    var box=$('.box');
    //获取盒子的个数
    var boxLength=box.length;
