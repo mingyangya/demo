@@ -11,6 +11,7 @@ $(function(){
       lineWid;
   // sec=getTime(time)-1;
   // secInit=getTime(time);
+  var musicTimeInit=0;
   lineTotalWidth=parseInt($('.song-line').css('width').split('px')[0],10);
 
   setMussic();
@@ -33,7 +34,7 @@ $(function(){
 
     loadTime=setInterval(function(){
       lineWid=$('.song-run-line').css('width');
-      if(musicTimeInit>=0){
+      if(musicTimeInit>0){
         console.log(musicTime)
         $('.song-time').text(setSocond(musicTimeInit))
 
@@ -101,6 +102,6 @@ function changeNum(num){
 *
 */
 function setMussic(){
-  $('.audio-player').append('<audio src="./data/Taste.ogg" controls="false" class="audio" preload="preload"></audio>')
+  $('.audio-player').append('<audio src="./data/Taste.OGG" controls="false" class="audio" preload="preload"></audio>')
 }
 
