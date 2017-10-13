@@ -8,7 +8,8 @@ $(function(){
       i=1,
       secInit,
       lineTotalWidth,
-      lineWid;
+      lineWid
+musicTimeInit=0;
   // sec=getTime(time)-1;
   // secInit=getTime(time);
   var musicTimeInit=0;
