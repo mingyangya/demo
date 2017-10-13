@@ -8,7 +8,8 @@ $(function(){
       i=1,
       secInit,
       lineTotalWidth,
-      lineWid;
+      lineWid
+musicTimeInit=0;
   // sec=getTime(time)-1;
   // secInit=getTime(time);
   lineTotalWidth=parseInt($('.song-line').css('width').split('px')[0],10);
@@ -33,7 +34,7 @@ $(function(){
 
     loadTime=setInterval(function(){
       lineWid=$('.song-run-line').css('width');
-      if(musicTimeInit>=0){
+      if(musicTimeInit>0){
         console.log(musicTime)
         $('.song-time').text(setSocond(musicTimeInit))
 
