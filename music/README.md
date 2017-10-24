@@ -2,7 +2,7 @@
 
 描述：网易云音乐控件的简单实现
 
-演示地址：[![演示地址](../public/img/link.png)](https://haochn.github.io/demo/music/index.html)
+演示地址：[![演示地址](.https://github.com/haochn/demo/tree/master/public/img/link.png)](https://haochn.github.io/demo/music/index.html)
 
 截图：
 

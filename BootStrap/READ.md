@@ -4,10 +4,10 @@
 
 	描述：bootstrap实现无缝图片轮播
 
-	演示地址：[![演示地址](./public/img/link.png)](https://haochn.github.io/demo/BootStrap/PicSwitch.html)
+	演示地址：[![演示地址](https://github.com/haochn/demo/tree/master/public/img/link.png)](https://haochn.github.io/demo/BootStrap/PicSwitch.html)
 
 - 选项卡(TabPanes)
 
 	描述：bootstrap实现选项卡
 
-	演示地址：[![演示地址](../public/img/link.png)](https://haochn.github.io/demo/BootStrap/TabPanes.html)
+	演示地址：[![演示地址](.https://github.com/haochn/demo/tree/master/public/img/link.png)](https://haochn.github.io/demo/BootStrap/TabPanes.html)
