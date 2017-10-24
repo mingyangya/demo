@@ -1,0 +1,47 @@
+@charset "utf-8";
+/* CSS Document */
+/*全局控制*/
+*{
+	margin:0;
+	padding:0;
+	font-size: 14px;
+	font-style: normal;
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+i,span{
+	display: inline-block;
+}
+img{
+	display: block;
+	width:100%;
+}
+.none{
+	display: none;
+}
+.relative{
+	position: relative;
+}
+.fixed{
+	position: fixed;
+}
+.absolute{
+	position: absolute;
+}
+.float-l{
+	float: left;
+}
+.float-r{
+	float:right;
+}
+.bd-box{
+	box-sizing: border-box;
+}
+.icon{
+	display: block;
+	width:100%;
+}

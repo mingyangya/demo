@@ -1,0 +1,142 @@
+ body {
+     background-color: #f1f2f3;
+     padding-top: 30px;
+ }
+
+ #main>h1 {
+     font-size: 32px;
+     color: #666;
+     text-align: center;
+ }
+
+ .recommend {
+     width: 932px;
+     height: 3000px;
+     margin: 0 auto;
+ }
+
+ .box {
+     display: inline-block;
+     width: 224px;
+     margin: 10px;
+     overflow: hidden;
+ }
+
+ .recommend-item {
+     width: 224px;
+     height: auto;
+     background: #fff;
+     border-width: 0 0 3px;
+     border-style: solid;
+     border-color: #E3E4E5;
+ }
+
+ .recommend-item a:hover {
+     cursor: pointer;
+ }
+
+ .recommend-icon {
+     width: 100%;
+     overflow: hidden;
+ }
+
+ .recommend-icon:hover {
+     cursor: pointer;
+ }
+
+ .recommend-bottom {
+     overflow: hidden;
+     zoom: 1;
+     margin: 20px 14px;
+ }
+
+ .recommend-item-title {
+     display: block;
+     margin: 0 0 10px 0;
+     line-height: 23px;
+     color: #444;
+ }
+
+ .bar {
+     overflow: hidden;
+     padding: 15px 0;
+     margin: 0 0 20px 0;
+     border-bottom: 1px solid #f0f0f0;
+ }
+
+ .bar-author {
+     overflow: hidden;
+ }
+
+ .bar-author a {
+     color: #666;
+ }
+
+ .bar-author a:hover {
+     text-decoration: underline;
+ }
+
+ .star {
+     color: #a0a0a0;
+     vertical-align: middle;
+ }
+
+ .star>i {
+     vertical-align: text-bottom;
+ }
+
+ .star-num {
+     height: 18px;
+     margin: 0 0 0 5px;
+ }
+
+ .price {
+     color: #F14382;
+     font-weight: 700;
+ }
+
+ .nickname {
+     display: block;
+ }
+
+ .author {
+     width: 24px;
+     height: 24px;
+ }
+
+ .author:hover {
+     cursor: pointer;
+ }
+
+ .author>img {
+     width: 24px;
+     height: 24px;
+     border-radius: 50%;
+ }
+
+ .msg {
+     display: block;
+     max-width: 142px;
+     margin: 0 0 0 16px;
+ }
+
+ .msg:before {
+     clear: both;
+ }
+
+ .msg:after {
+     clear: both;
+ }
+
+ .msg>span {
+     display: block;
+ }
+
+ .nickname {
+     margin: 0 0 8px 0;
+ }
+
+ .collection {
+     color: #888;
+     line-height: 1.5;
+ }

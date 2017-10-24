@@ -1,2 +1,5 @@
-百度首页(部分特效)
-H5+css3+jQuery实现
+# 百度首页布局
+
+描述：百度一下页面布局
+
+演示地址：[![演示地址](./public/img/link.png)](https://haochn.github.io/demo/baidu/index.html)

@@ -1,3 +1,13 @@
 # BootStrap实现选项卡和图片无缝轮播
-1. 图片无缝滚动(PicSwitch)
-2. 选项卡(TabPanes)
+
+- carousel控件
+
+	描述：bootstrap实现无缝图片轮播
+
+	演示地址：[![演示地址](./public/img/link.png)](https://haochn.github.io/demo/BootStrap/PicSwitch.html)
+
+- 选项卡(TabPanes)
+
+	描述：bootstrap实现选项卡
+
+	演示地址：[![演示地址](../public/img/link.png)](https://haochn.github.io/demo/BootStrap/TabPanes.html)
