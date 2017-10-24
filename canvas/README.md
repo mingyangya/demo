@@ -2,4 +2,4 @@
 
 描述：canvas实现数字时钟效果
 
-演示地址：[![演示地址](.https://github.com/haochn/demo/tree/master/public/img/link.png)](https://haochn.github.io/demo/canvas/index.html)
+演示地址：[<i class="icon-external-link icon-2x" style="font-size: 16px;"></i>](https://haochn.github.io/demo/canvas/index.html)
