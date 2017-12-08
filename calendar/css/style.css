@@ -1,29 +1,39 @@
 @charset "utf-8";
-*{
-	box-sizing: border-box;
-}
-html,
-body{
-	width:100%; 
- 	height:100%;
- 	margin:0; 
-	padding:0; 
-	font-size:14px; 
-	font-family:"微软雅黑";
-}
-ul {
-	margin:0;
-	padding:0;
-	width:100%;
-	overflow: hidden;
+* {
+    box-sizing: border-box;
 }
 
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: "微软雅黑";
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+.current {
+    background-color: #ff5d68 !important;
+    color: #fff;
+}
+
+
+
+
 /*日历控件相关*/
+
 .cale {
-    width: 80%;
-    padding: 0 0 10px 0;
+    max-width: 750px;
+    padding: 10px 0 0 0;
     margin: 0 auto;
-  
     color: #767B7F;
 }
 
@@ -36,34 +46,35 @@ ul {
 }
 
 .cale-top .cale-top-info {
-    width: 80px;
+
     margin: 0 auto;
 }
 
 .cale-top>span {
     position: absolute;
     display: block;
+    width: 10px;
 }
 
 .cale-top-l {
     top: 13px;
-    left: 10px;
+    left: 20px;
     cursor: pointer;
 }
 
 .cale-top-l img {
-    width: 60%;
+    width: 100%;
     display: block;
 }
 
 .cale-top-r {
     top: 13px;
-    right: 10px;
+    right: 20px;
     cursor: pointer;
 }
 
 .cale-top-r>img {
-    width: 60%;
+    width: 100%;
     display: block;
 }
 
@@ -74,8 +85,8 @@ ul {
 }
 
 .cale-week>ul {
-	width:100%;
-	overflow: hidden;
+    width: 100%;
+    overflow: hidden;
 }
 
 .cale-week li {
@@ -100,11 +111,10 @@ ul {
     line-height: 40px;
     cursor: pointer;
     text-align: center;
- 
 }
 
 .cale-info .caleOther {
-     color:#ccc;
+    color: #ccc;
 }
 
 .cale-info li a {
@@ -118,12 +128,15 @@ ul {
     height: 40px;
     margin: 0 auto;
     display: block;
-}
-.caleDayCircle>a:hover{
-    background:#ff5d68;
-    color:#fff;
     border-radius: 50%;
 }
+
+.caleDayCircle>a:hover {
+    background: #ff5d68;
+    color: #fff;
+    border-radius: 50%;
+}
+
 .cale-info-active {
     background: #f00;
     background: url(../img/heart.png);
@@ -169,5 +182,3 @@ ul {
     color: #fff;
     font-size: 12px;
 }
-
-
