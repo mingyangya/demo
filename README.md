@@ -8,7 +8,7 @@
 
 	源码地址：[百度一下页面布局](https://github.com/haochn/plugins/tree/master/baidu/)
 
-	演示地址：[百度一下页面布局](./index.html)
+	演示地址：[百度一下页面布局](index.html)
 
 ## css3
 
