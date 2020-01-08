@@ -8,7 +8,7 @@
 
 	源码地址：[百度一下页面布局](/baidu/)
 
-	演示地址：[百度一下页面布局](https://mingyangya.github.io/plugins//baidu/index.html)
+	演示地址：[百度一下页面布局](https://mingyangya.github.io/demo/baidu/index.html)
 
 ## css3
 
@@ -18,7 +18,7 @@
 
 	源码地址：[css3照片墙](/picture-wall)
 
-	演示地址：[css3照片墙](https://mingyangya.github.io/plugins/picture-wall/index.html)
+	演示地址：[css3照片墙](https://mingyangya.github.io/demo/picture-wall/index.html)
 
 ## js
 
@@ -28,7 +28,7 @@
 
 	源码地址：[carousel控件](/BootStrap)
 
-	演示地址：[carousel控件](https://mingyangya.github.io/plugins/BootStrap/PicSwitch.html)
+	演示地址：[carousel控件](https://mingyangya.github.io/demo/BootStrap/PicSwitch.html)
 
 - 日历(原生js)
 
@@ -36,7 +36,7 @@
 
 	源码地址：[日历](/calendar)
 
-	演示地址：[日历](https://mingyangya.github.io/plugins/calendar/index.html)
+	演示地址：[日历](https://mingyangya.github.io/demo/calendar/index.html)
 
 - slider
 
@@ -44,7 +44,7 @@
 
 	源码地址：[slider](/jq-slider)
 
-	演示地址：[slider](https://mingyangya.github.io/plugins/jq-slider/index.html)
+	演示地址：[slider](https://mingyangya.github.io/demo/jq-slider/index.html)
 
 - 网易云音乐控件
 
@@ -52,7 +52,7 @@
 
 	源码地址：[网易云音乐控件](/music)
 
-	演示地址：[网易云音乐控件](https://mingyangya.github.io/plugins/music/index.html)
+	演示地址：[网易云音乐控件](https://mingyangya.github.io/demo/music/index.html)
 
 - 堆糖网瀑布流
 	
@@ -60,7 +60,7 @@
 
 	源码地址：[堆糖网瀑布流](/duitang-Waterfall)
 
-	演示地址：[堆糖网瀑布流](https://mingyangya.github.io/plugins/duitang-Waterfall/index.html)
+	演示地址：[堆糖网瀑布流](https://mingyangya.github.io/demo/duitang-Waterfall/index.html)
 
 ## canvas
 
@@ -70,5 +70,5 @@
 
 	源码地址：[数字时钟](/canvas)
 
-	演示地址：[数字时钟](https://mingyangya.github.io/plugins/canvas/index.html)
+	演示地址：[数字时钟](https://mingyangya.github.io/demo/canvas/index.html)
 

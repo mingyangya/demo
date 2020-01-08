@@ -2,4 +2,4 @@
 
 描述：百度一下页面布局
 
-演示地址：[百度](https://haochn.github.io/plugins/baidu/index.html)
+演示地址：[百度](https://mingyangya.github.io/demo/baidu/index.html)
