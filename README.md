@@ -60,7 +60,7 @@
 
 	源码地址：[堆糖网瀑布流](/duitang-Waterfall)
 
-	演示地址：[堆糖网瀑布流](https://mingyangya.github.io/demo/duitang-Waterfall/index.html)
+	演示地址：[堆糖网瀑布流](https://mingyangya.github.io/demo/duitang-waterfall/index.html)
 
 ## canvas
 
